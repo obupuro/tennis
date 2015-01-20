@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:text="@string/order"
+        android:id="@+id/myteam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:typeface="serif"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/textBox01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text01"
+        android:layout_below="@+id/myteam">
+    </EditText>
+    <Button
+        android:text="@string/button02"
+        android:id="@+id/button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textBox02"/>
+
+    <TextView
+        android:text="@string/vs"
+        android:id="@+id/vs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:typeface="serif"
+        android:layout_below="@+id/textBox01"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/textBox02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text02"
+        android:layout_below="@+id/vs"
+        >
+    </EditText>
+
+
+
+</RelativeLayout>

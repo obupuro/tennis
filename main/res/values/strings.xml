@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tennis</string>
+    <string name="tennis01">My\nSERVICE</string>
+    <string name="tennis02">Checker!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button01">Let’s Go</string>
+    <string name="button02">PLAY</string>
+    <string name="order">PLAYER</string>
+    <string name="vs">vs</string>
+    <string name="text01">Your Team</string>
+    <string name="text02">Opponent Team</string>
+    <string name="count">-</string>
+    <string name="point01">Point</string>
+    <string name="point02">Point</string>
+    <string name="setText01">ゲーム</string>
+    <string name="setText02">ゲーム</string>
+
+</resources>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/vs"/>
+
+    <TextView
+        android:text="@string/vs"
+        android:id="@+id/vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:typeface="serif"
+        android:layout_alignBottom="@+id/text01"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/text02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/vs"/>
+
+    <TextView
+        android:id="@+id/point01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:typeface="serif"
+        android:layout_toLeftOf="@id/vs"
+        android:layout_below="@id/vs"/>
+
+    <TextView
+        android:text="@string/count"
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:typeface="serif"
+        android:layout_below="@id/vs"
+        android:layout_alignRight="@id/vs"/>
+
+    <TextView
+        android:id="@+id/point02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:typeface="serif"
+        android:layout_toRightOf="@id/vs"
+        android:layout_below="@id/vs"/>
+
+    <Button
+        android:text="@string/point01"
+        android:id="@+id/button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/vs"
+        android:layout_below="@id/point01"/>
+
+    <Button
+        android:text="@string/point02"
+        android:id="@+id/button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/vs"
+        android:layout_below="@id/point02"/>
+
+    <TextView
+        android:id="@+id/set01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:typeface="serif"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/vs"/>
+
+    <TextView
+        android:id="@+id/set02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:typeface="serif"
+        android:layout_toLeftOf="@+id/setText02"
+        android:layout_below="@id/vs"/>
+
+    <TextView
+        android:text="@string/setText01"
+        android:id="@+id/setText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:typeface="serif"
+        android:layout_toRightOf="@+id/set01"
+        android:layout_alignBottom="@+id/set01"/>
+
+    <TextView
+        android:text="@string/setText02"
+        android:id="@+id/setText02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:typeface="serif"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/set02"/>
+
+    <Button
+        android:text="Cancel"
+        android:id="@+id/cancel01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/button01"/>
+
+    <Button
+        android:text="Cancel"
+        android:id="@+id/cancel02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/button02"/>
+
+    <Button
+        android:text="A"
+        android:id="@+id/A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fault"
+        android:layout_alignRight="@+id/cancel01"/>
+
+    <Button
+        android:text="B"
+        android:id="@+id/B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fault"
+        android:layout_alignRight="@+id/point01"/>
+
+    <Button
+        android:text="C"
+        android:id="@+id/C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fault"
+        android:layout_alignLeft="@+id/point02"/>
+
+    <Button
+        android:text="D"
+        android:id="@+id/D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fault"
+        android:layout_alignLeft="@+id/cancel02"/>
+
+    <Button
+        android:text="Fault"
+        android:id="@+id/fault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:contentDescription="画像の説明"
+        android:layout_above="@+id/A"
+        android:layout_alignLeft="@+id/fault"/>
+
+    <Button
+        android:text="Game Set"
+        android:id="@+id/end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button01"
+        android:layout_alignLeft="@+id/fault"/>
+
+
+
+</RelativeLayout>
